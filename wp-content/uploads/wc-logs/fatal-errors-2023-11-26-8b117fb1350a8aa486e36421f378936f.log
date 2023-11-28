@@ -1,0 +1,118 @@
+2023-11-26T21:41:19+00:00 CRITICAL Uncaught ArgumentCountError: 3 arguments are required, 2 given in C:\xampp8\htdocs\KenaProject\wp-admin\includes\class-bulk-upgrader-skin.php:162
+Stack trace:
+#0 C:\xampp8\htdocs\KenaProject\wp-admin\includes\class-bulk-upgrader-skin.php(162): sprintf('%1$s installed ...', 'Clever Swatches')
+#1 C:\xampp8\htdocs\KenaProject\wp-content\themes\fona\core\admin\migration\tgm-plugin-activation.php(3646): Bulk_Upgrader_Skin->after('Clever Swatches')
+#2 C:\xampp8\htdocs\KenaProject\wp-admin\includes\class-wp-upgrader.php(921): TGMPA_Bulk_Installer_Skin->after()
+#3 C:\xampp8\htdocs\KenaProject\wp-content\themes\fona\core\admin\migration\tgm-plugin-activation.php(3266): WP_Upgrader->run(Array)
+#4 C:\xampp8\htdocs\KenaProject\wp-content\themes\fona\core\admin\migration\tgm-plugin-activation.php(3379): TGMPA_Bulk_Installer->run(Array)
+#5 C:\xampp8\htdocs\KenaProject\wp-content\themes\fona\core\admin\migration\tgm-plugin-activation.php(2985): TGMPA_Bulk_Installer->bulk_install(Array)
+#6 C:\xampp8\htdocs\KenaProject\wp-content\themes\fona\core\admin\migration\tgm-plugin-activation.php(748): TGMPA_List_Table->process_bulk_actions()
+#7 C:\xampp8\htdocs\KenaProject\wp-includes\class-wp-hook.php(324): TGM_Plugin_Activation->install_plugins_page('')
+#8 C:\xampp8\htdocs\KenaProject\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#9 C:\xampp8\htdocs\KenaProject\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#10 C:\xampp8\htdocs\KenaProject\wp-admin\admin.php(259): do_action('fona_page_tgmpa...')
+#11 {main}
+  thrown in C:\xampp8\htdocs\KenaProject\wp-admin\includes\class-bulk-upgrader-skin.php on line 162
+
+2023-11-26T21:41:27+00:00 CRITICAL Uncaught ArgumentCountError: 3 arguments are required, 2 given in C:\xampp8\htdocs\KenaProject\wp-admin\includes\class-bulk-upgrader-skin.php:162
+Stack trace:
+#0 C:\xampp8\htdocs\KenaProject\wp-admin\includes\class-bulk-upgrader-skin.php(162): sprintf('%1$s installed ...', 'Clever WooComme...')
+#1 C:\xampp8\htdocs\KenaProject\wp-content\themes\fona\core\admin\migration\tgm-plugin-activation.php(3646): Bulk_Upgrader_Skin->after('Clever WooComme...')
+#2 C:\xampp8\htdocs\KenaProject\wp-admin\includes\class-wp-upgrader.php(921): TGMPA_Bulk_Installer_Skin->after()
+#3 C:\xampp8\htdocs\KenaProject\wp-content\themes\fona\core\admin\migration\tgm-plugin-activation.php(3266): WP_Upgrader->run(Array)
+#4 C:\xampp8\htdocs\KenaProject\wp-content\themes\fona\core\admin\migration\tgm-plugin-activation.php(3379): TGMPA_Bulk_Installer->run(Array)
+#5 C:\xampp8\htdocs\KenaProject\wp-content\themes\fona\core\admin\migration\tgm-plugin-activation.php(2985): TGMPA_Bulk_Installer->bulk_install(Array)
+#6 C:\xampp8\htdocs\KenaProject\wp-content\themes\fona\core\admin\migration\tgm-plugin-activation.php(748): TGMPA_List_Table->process_bulk_actions()
+#7 C:\xampp8\htdocs\KenaProject\wp-includes\class-wp-hook.php(324): TGM_Plugin_Activation->install_plugins_page('')
+#8 C:\xampp8\htdocs\KenaProject\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#9 C:\xampp8\htdocs\KenaProject\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#10 C:\xampp8\htdocs\KenaProject\wp-admin\admin.php(259): do_action('fona_page_tgmpa...')
+#11 {main}
+  thrown in C:\xampp8\htdocs\KenaProject\wp-admin\includes\class-bulk-upgrader-skin.php on line 162
+
+2023-11-26T21:41:37+00:00 CRITICAL Uncaught ArgumentCountError: 3 arguments are required, 2 given in C:\xampp8\htdocs\KenaProject\wp-admin\includes\class-bulk-upgrader-skin.php:162
+Stack trace:
+#0 C:\xampp8\htdocs\KenaProject\wp-admin\includes\class-bulk-upgrader-skin.php(162): sprintf('%1$s installed ...', 'Contact Form 7')
+#1 C:\xampp8\htdocs\KenaProject\wp-content\themes\fona\core\admin\migration\tgm-plugin-activation.php(3646): Bulk_Upgrader_Skin->after('Contact Form 7')
+#2 C:\xampp8\htdocs\KenaProject\wp-admin\includes\class-wp-upgrader.php(921): TGMPA_Bulk_Installer_Skin->after()
+#3 C:\xampp8\htdocs\KenaProject\wp-content\themes\fona\core\admin\migration\tgm-plugin-activation.php(3266): WP_Upgrader->run(Array)
+#4 C:\xampp8\htdocs\KenaProject\wp-content\themes\fona\core\admin\migration\tgm-plugin-activation.php(3379): TGMPA_Bulk_Installer->run(Array)
+#5 C:\xampp8\htdocs\KenaProject\wp-content\themes\fona\core\admin\migration\tgm-plugin-activation.php(2985): TGMPA_Bulk_Installer->bulk_install(Array)
+#6 C:\xampp8\htdocs\KenaProject\wp-content\themes\fona\core\admin\migration\tgm-plugin-activation.php(748): TGMPA_List_Table->process_bulk_actions()
+#7 C:\xampp8\htdocs\KenaProject\wp-includes\class-wp-hook.php(324): TGM_Plugin_Activation->install_plugins_page('')
+#8 C:\xampp8\htdocs\KenaProject\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#9 C:\xampp8\htdocs\KenaProject\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#10 C:\xampp8\htdocs\KenaProject\wp-admin\admin.php(259): do_action('fona_page_tgmpa...')
+#11 {main}
+  thrown in C:\xampp8\htdocs\KenaProject\wp-admin\includes\class-bulk-upgrader-skin.php on line 162
+
+2023-11-26T21:41:46+00:00 CRITICAL Uncaught ArgumentCountError: 3 arguments are required, 2 given in C:\xampp8\htdocs\KenaProject\wp-admin\includes\class-bulk-upgrader-skin.php:162
+Stack trace:
+#0 C:\xampp8\htdocs\KenaProject\wp-admin\includes\class-bulk-upgrader-skin.php(162): sprintf('%1$s installed ...', 'MailChimp for W...')
+#1 C:\xampp8\htdocs\KenaProject\wp-content\themes\fona\core\admin\migration\tgm-plugin-activation.php(3646): Bulk_Upgrader_Skin->after('MailChimp for W...')
+#2 C:\xampp8\htdocs\KenaProject\wp-admin\includes\class-wp-upgrader.php(921): TGMPA_Bulk_Installer_Skin->after()
+#3 C:\xampp8\htdocs\KenaProject\wp-content\themes\fona\core\admin\migration\tgm-plugin-activation.php(3266): WP_Upgrader->run(Array)
+#4 C:\xampp8\htdocs\KenaProject\wp-content\themes\fona\core\admin\migration\tgm-plugin-activation.php(3379): TGMPA_Bulk_Installer->run(Array)
+#5 C:\xampp8\htdocs\KenaProject\wp-content\themes\fona\core\admin\migration\tgm-plugin-activation.php(2985): TGMPA_Bulk_Installer->bulk_install(Array)
+#6 C:\xampp8\htdocs\KenaProject\wp-content\themes\fona\core\admin\migration\tgm-plugin-activation.php(748): TGMPA_List_Table->process_bulk_actions()
+#7 C:\xampp8\htdocs\KenaProject\wp-includes\class-wp-hook.php(324): TGM_Plugin_Activation->install_plugins_page('')
+#8 C:\xampp8\htdocs\KenaProject\wp-includes\class-wp-hook.php(348): WP_Hook->apply_filters('', Array)
+#9 C:\xampp8\htdocs\KenaProject\wp-includes\plugin.php(517): WP_Hook->do_action(Array)
+#10 C:\xampp8\htdocs\KenaProject\wp-admin\admin.php(259): do_action('fona_page_tgmpa...')
+#11 {main}
+  thrown in C:\xampp8\htdocs\KenaProject\wp-admin\includes\class-bulk-upgrader-skin.php on line 162
+
+2023-11-26T21:47:45+00:00 CRITICAL Uncaught Error: Undefined constant "ZOO_THEME_SLUG" in C:\xampp8\htdocs\KenaProject\wp-content\plugins\clever-addons\src\metaboxes\header-attributes.php:19
+Stack trace:
+#0 C:\xampp8\htdocs\KenaProject\wp-admin\includes\template.php(1456): zoo_render_header_attributes_metabox(Object(WP_Post), Array)
+#1 C:\xampp8\htdocs\KenaProject\wp-admin\includes\post.php(2369): do_meta_boxes(Object(WP_Screen), 'advanced', Object(WP_Post))
+#2 C:\xampp8\htdocs\KenaProject\wp-admin\edit-form-blocks.php(316): the_block_editor_meta_boxes()
+#3 C:\xampp8\htdocs\KenaProject\wp-admin\post.php(187): require('C:\\xampp8\\htdoc...')
+#4 {main}
+  thrown in C:\xampp8\htdocs\KenaProject\wp-content\plugins\clever-addons\src\metaboxes\header-attributes.php on line 19
+
+2023-11-26T22:13:24+00:00 CRITICAL Uncaught Error: Undefined constant "ZOO_THEME_SLUG" in C:\xampp8\htdocs\KenaProject\wp-content\plugins\clever-addons\src\metaboxes\header-attributes.php:19
+Stack trace:
+#0 C:\xampp8\htdocs\KenaProject\wp-admin\includes\template.php(1456): zoo_render_header_attributes_metabox(Object(WP_Post), Array)
+#1 C:\xampp8\htdocs\KenaProject\wp-admin\includes\post.php(2369): do_meta_boxes(Object(WP_Screen), 'advanced', Object(WP_Post))
+#2 C:\xampp8\htdocs\KenaProject\wp-admin\edit-form-blocks.php(316): the_block_editor_meta_boxes()
+#3 C:\xampp8\htdocs\KenaProject\wp-admin\post.php(187): require('C:\\xampp8\\htdoc...')
+#4 {main}
+  thrown in C:\xampp8\htdocs\KenaProject\wp-content\plugins\clever-addons\src\metaboxes\header-attributes.php on line 19
+
+2023-11-26T22:15:36+00:00 CRITICAL Uncaught Error: Undefined constant "ZOO_THEME_SLUG" in C:\xampp8\htdocs\KenaProject\wp-content\plugins\clever-addons\src\metaboxes\header-attributes.php:19
+Stack trace:
+#0 C:\xampp8\htdocs\KenaProject\wp-admin\includes\template.php(1456): zoo_render_header_attributes_metabox(Object(WP_Post), Array)
+#1 C:\xampp8\htdocs\KenaProject\wp-admin\includes\post.php(2369): do_meta_boxes(Object(WP_Screen), 'advanced', Object(WP_Post))
+#2 C:\xampp8\htdocs\KenaProject\wp-admin\edit-form-blocks.php(316): the_block_editor_meta_boxes()
+#3 C:\xampp8\htdocs\KenaProject\wp-admin\post.php(187): require('C:\\xampp8\\htdoc...')
+#4 {main}
+  thrown in C:\xampp8\htdocs\KenaProject\wp-content\plugins\clever-addons\src\metaboxes\header-attributes.php on line 19
+
+2023-11-26T22:21:51+00:00 CRITICAL Uncaught Error: Undefined constant "ZOO_THEME_SLUG" in C:\xampp8\htdocs\KenaProject\wp-content\plugins\clever-addons\src\metaboxes\header-attributes.php:19
+Stack trace:
+#0 C:\xampp8\htdocs\KenaProject\wp-admin\includes\template.php(1456): zoo_render_header_attributes_metabox(Object(WP_Post), Array)
+#1 C:\xampp8\htdocs\KenaProject\wp-admin\includes\post.php(2369): do_meta_boxes(Object(WP_Screen), 'advanced', Object(WP_Post))
+#2 C:\xampp8\htdocs\KenaProject\wp-admin\edit-form-blocks.php(316): the_block_editor_meta_boxes()
+#3 C:\xampp8\htdocs\KenaProject\wp-admin\post.php(187): require('C:\\xampp8\\htdoc...')
+#4 {main}
+  thrown in C:\xampp8\htdocs\KenaProject\wp-content\plugins\clever-addons\src\metaboxes\header-attributes.php on line 19
+
+2023-11-26T22:31:24+00:00 CRITICAL Uncaught Error: Undefined constant "ZOO_THEME_SLUG" in C:\xampp8\htdocs\KenaProject\wp-content\plugins\clever-addons\src\metaboxes\header-attributes.php:19
+Stack trace:
+#0 C:\xampp8\htdocs\KenaProject\wp-admin\includes\template.php(1456): zoo_render_header_attributes_metabox(Object(WP_Post), Array)
+#1 C:\xampp8\htdocs\KenaProject\wp-admin\includes\post.php(2369): do_meta_boxes(Object(WP_Screen), 'advanced', Object(WP_Post))
+#2 C:\xampp8\htdocs\KenaProject\wp-admin\edit-form-blocks.php(316): the_block_editor_meta_boxes()
+#3 C:\xampp8\htdocs\KenaProject\wp-admin\post.php(187): require('C:\\xampp8\\htdoc...')
+#4 {main}
+  thrown in C:\xampp8\htdocs\KenaProject\wp-content\plugins\clever-addons\src\metaboxes\header-attributes.php on line 19
+
+2023-11-26T22:32:21+00:00 CRITICAL Uncaught Error: Undefined constant "ZOO_THEME_SLUG" in C:\xampp8\htdocs\KenaProject\wp-content\plugins\clever-addons\src\metaboxes\header-attributes.php:19
+Stack trace:
+#0 C:\xampp8\htdocs\KenaProject\wp-admin\includes\template.php(1456): zoo_render_header_attributes_metabox(Object(WP_Post), Array)
+#1 C:\xampp8\htdocs\KenaProject\wp-admin\includes\post.php(2369): do_meta_boxes(Object(WP_Screen), 'advanced', Object(WP_Post))
+#2 C:\xampp8\htdocs\KenaProject\wp-admin\edit-form-blocks.php(316): the_block_editor_meta_boxes()
+#3 C:\xampp8\htdocs\KenaProject\wp-admin\post.php(187): require('C:\\xampp8\\htdoc...')
+#4 {main}
+  thrown in C:\xampp8\htdocs\KenaProject\wp-content\plugins\clever-addons\src\metaboxes\header-attributes.php on line 19
+

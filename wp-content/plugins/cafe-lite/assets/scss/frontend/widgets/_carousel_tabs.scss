@@ -1,0 +1,87 @@
+.cafe-tabs{
+    &.visible-content{
+        .slick-list{
+            overflow: visible;
+        }
+    }
+    .cafe-wrap-tabs{
+        position: relative;
+    }
+    .cafe-carousel{
+        margin:0;
+        padding:0;
+    }
+    .cafe-drag-label{
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding:5px;
+        font-weight: 500;
+        color: #fff;
+        background: #E53537;
+        top:50%;
+        left: 100%;
+        transform: translate(-50%,-50%);
+        position: absolute;
+        z-index: 3;
+        cursor: pointer;
+        transition: all 300ms;
+        i{
+            font-weight: normal;
+            font-size: 85%;
+        }
+    }
+    .cafe-wrap-tab-head{
+        margin-bottom: 40px;
+        .cafe-tab-item{
+            margin-left: 20px;
+            margin-right: 20px;
+            transition: all 300ms;
+            position: relative;
+            padding:10px 0;
+            cursor: pointer;
+            &:after{
+                content: '';
+                width: 0;
+                border-bottom: 2px solid;
+                transition: all 300ms;
+                position: absolute;
+                bottom:0;
+                left:0
+            }
+            &:last-child{
+                margin-right: 0 !important;
+            }
+            &:first-child{
+                margin-left: 0 !important;
+            }
+            &.active,&:hover{
+                &:after{
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .cafe-tab{
+        position: absolute;left: 0;
+        top:0;
+        opacity: 0;
+        transition: all 500ms;
+        z-index: -1;
+        &.active{
+            position: static;
+            opacity: 1;
+        }
+    }
+    .cafe-tab-carousel-item{
+        position: relative;
+        &:not(.slick-active){
+            .cafe-drag-label{
+                opacity: 0;
+            }
+        }
+    }
+}

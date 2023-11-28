@@ -1,0 +1,61 @@
+<?php
+/**
+ * The main template file.
+ *
+ * This is the most generic template file in a WordPress theme
+ * and one of the two required files for a theme (the other being style.css).
+ * It is used to display a page when nothing more specific matches a query.
+ * E.g., it puts together the home page when no home.php file exists.
+ *
+ * @package  Zoo_Theme\Templates
+ * @author   zootemplate
+ * @link     https://www.zootemplate.com/
+ *
+ */
+
+$zoo_block_layout = get_theme_mod('zoo_blog_layout', 'list');
+$main_class = 'main-content index-content';
+$loop_class = 'wrap-loop-content col-12';
+$zoo_sidebar = get_theme_mod('zoo_blog_sidebar_config', 'right');
+if(is_active_sidebar(get_theme_mod('zoo_blog_sidebar','sidebar'))) {
+    if ($zoo_sidebar == 'left') {
+        $loop_class .= ' col-md-9';
+        $main_class .= ' has-left-sidebar';
+    } else if ($zoo_sidebar == 'right') {
+        $loop_class .= ' col-md-9';
+        $main_class .= ' has-right-sidebar';
+    }
+}
+$loop_class .= ' '.$zoo_block_layout . '-layout';
+
+get_header();
+get_template_part('inc/templates/posts/blog', 'cover');
+?>
+    <main id="site-main-content" class="<?php echo esc_attr($main_class) ?>">
+        <div class="container">
+            <div class="row">
+                <?php
+                if ($zoo_sidebar == 'left') {
+                    get_sidebar();
+                }
+                ?>
+                <div class="<?php echo esc_attr($loop_class) ?>">
+                    <div class="row">
+                        <?php if (have_posts()) :
+                            while (have_posts()) : the_post();
+                                get_template_part('inc/templates/posts/loop/' . $zoo_block_layout, 'layout');
+                            endwhile;
+                        else :
+                            get_template_part('content', 'none');
+                        endif; ?>
+                    </div>
+                    <?php get_template_part('inc/templates/posts/post', 'pagination'); ?>
+                </div>
+                <?php if ($zoo_sidebar == 'right') {
+                    get_sidebar();
+                } ?>
+            </div>
+        </div>
+    </main>
+<?php
+get_footer();

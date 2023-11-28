@@ -1,0 +1,27 @@
+
+node_modules
+package-lock.json
+
+# IDE & System Related Files
+.buildpath
+.project
+.settings
+
+# OSX
+._*
+.Spotlight-V100
+.Trashes
+.DS_Store
+
+# Windows
+.thumbs
+Thumbs.db
+Desktop.ini
+
+# IntelliJ - PhpStorm and PyCharm
+.idea
+.idea/
+.idea/*
+*.iml
+*.ipr
+*.iws

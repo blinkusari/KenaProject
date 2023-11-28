@@ -1,0 +1,479 @@
+#cafe-templatekit-modal {
+    .dialog-widget-content {
+        width: 90%;
+        max-width: 1200px;
+        background-color: #f1f3f5;
+    }
+
+    .dialog-header,
+    .dialog-widget-header {
+        padding: 0;
+        background-color: #fff;
+        box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+        position: relative;
+        z-index: 1;
+    }
+
+    .dialog-buttons-wrapper {
+        display: none;
+    }
+
+    .dialog-message {
+        height: 630px;
+        max-height: 85vh;
+        overflow: auto;
+        padding: 15px;
+    }
+
+    .elementor-template-library-template-footer {
+        z-index: 999;
+    }
+
+    a {
+        color: inherit;
+
+        &:hover {
+            color: inherit;
+        }
+
+        &.elementor-template-library-blank-footer-link {
+            transition: color 0.5s;
+
+            &:hover {
+                color: #9b0a46;
+            }
+        }
+
+        &.elementor-button-go-pro {
+            display: block;
+            background-color: #39b54a;
+            color: #fff;
+        }
+    }
+
+    .elementor-button {
+        text-transform: uppercase;
+    }
+
+    ::-webkit-scrollbar {
+        width: 6px;
+        height: 0;
+        border-radius: 3px;
+    }
+
+    ::-webkit-scrollbar-button {
+        width: 0;
+        height: 10px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background-color: #d5dadf;
+        border: 0 none #d5dadf;
+        border-radius: 0;
+        border-radius: 3px;
+    }
+
+    ::-webkit-scrollbar-track {
+        border: 0 none #fff;
+        border-radius: 0;
+    }
+
+    ::-webkit-scrollbar-corner {
+        background: transparent;
+    }
+}
+
+#cafe-templatekit-header {
+    display: flex;
+    justify-content: space-between;
+
+    .cafe-templatekit-back {
+        background: none;
+        border: none;
+        border-right: 1px solid #e6e9ec;
+        padding: 15px 20px 15px 15px;
+        line-height: 20px;
+        font-size: 13px;
+        font-weight: bold;
+        outline: none;
+        transition: all 200ms linear;
+        cursor: pointer;
+        color: #6d7882;
+
+        &:not(:hover) {
+            color: #a4afb7;
+        }
+    }
+
+    .elementor-button {
+        display: block;
+        padding: 8px 10px;
+        margin: 9px 10px 0 0;
+    }
+}
+
+#cafe-templatekit-header-close-modal {
+    width: 45px;
+    border-left: 1px solid #e6e9ec;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 200ms linear;
+
+    i {
+        color: #a4afb7;
+        font-size: 16px;
+    }
+
+    &:hover i {
+        color: #6d7882;
+    }
+}
+
+#cafe-templatekit-header-actions .template-library-activate-license {
+    display: block;
+    margin: 17px 20px 0 0;
+    color: #fcb92c;
+
+    &:hover {
+        color: #d89403;
+    }
+}
+
+#cafe-templatekit-modal {
+    .elementor-loader {
+        position: relative;
+
+        .elementor-loader-box {
+            &:first-of-type {
+                left: 40px;
+                top: 40px;
+                width: 14px;
+                height: 70px;
+            }
+
+            &:not(:first-of-type) {
+                right: 40px;
+                height: 14px;
+                width: 42px;
+            }
+
+            &:nth-of-type(2) {
+                top: 40px;
+            }
+
+            &:nth-of-type(3) {
+                top: 68px;
+            }
+
+            &:nth-of-type(4) {
+                bottom: 40px;
+            }
+        }
+    }
+
+    .elementor-library-error {
+        margin: 18% 0 0;
+    }
+
+    .elementor-library-error-message {
+        font-size: 18px;
+        padding: 0 0 20px;
+    }
+
+    .elementor-library-error-link a {
+        display: inline-block;
+        color: #fff;
+        background-image: none;
+        background: #fcb92c;
+        font-size: 13px;
+        font-weight: normal;
+        font-style: normal;
+        text-transform: uppercase;
+        line-height: 1;
+        height: 40px;
+        line-height: 40px;
+        min-width: 170px;
+        padding: 0 20px;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+        -webkit-transition: all 0.5s;
+        transition: all 0.5s;
+
+        &:hover {
+            opacity: 0.85;
+            box-shadow: 0 0 2px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.2);
+        }
+    }
+}
+
+#cafe-templatekit-header {
+    min-height: 52px;
+}
+
+#cafe-templatekit-tabs-items .elementor-template-library-menu-item {
+    display: inline-block;
+    position: relative;
+    text-align: left;
+    padding: 0;
+    width: auto;
+    font-size: 13px;
+    color: #6d7882;
+
+    input[type="radio"] {
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        margin: 0;
+        opacity: 0;
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+    span {
+        display: block;
+        padding: 20px 19px 16px;
+        border-bottom: 3px solid transparent;
+    }
+
+    &:hover span,
+    input:checked + span {
+        background: #fafafa;
+        border-bottom: 3px solid #9b0a46;
+    }
+}
+
+#cafe-templatekit-header-tabs {
+    flex: 1 1 auto;
+    text-align: left;
+}
+
+#cafe-templatekit-content {
+    display: flex;
+    height: calc(100% - 20px);
+
+    .cafe-tplkit-filters-list {
+        width: 15%;
+        padding: 25px 10px 10px;
+        height: 100%;
+        overflow: auto;
+    }
+
+    .cafe-tplkit-templates-wrap {
+        width: 85%;
+    }
+
+    .cafe-tplkit-templates-list {
+        height: 100%;
+        overflow: auto;
+    }
+
+    .cafe-tplkit-keywords-list {
+        padding-left: 10px;
+    }
+
+    .cafe-templatekit-filter-label {
+        display: block;
+        position: relative;
+        text-align: left;
+        padding: 12px 0;
+        text-transform: uppercase;
+
+        input[type="radio"] {
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            margin: 0;
+            opacity: 0;
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+
+        &:hover span,
+        input:checked + span {
+            color: #9b0a46;
+        }
+    }
+
+    .cafe-tplkit-filter-item {
+        border-top: 1px solid #d5dadf;
+
+        &:first-child {
+            border-top: none;
+        }
+    }
+
+    &.library-tab-local {
+        .cafe-tplkit-filters-list {
+            display: none;
+        }
+
+        .cafe-tplkit-templates-wrap {
+            width: 100%;
+        }
+
+        .cafe-templatekit-template-insert {
+            padding: 5px 12px;
+
+            i {
+                margin-right: 2px;
+            }
+
+            span {
+                font-size: 11px;
+            }
+        }
+
+        .elementor-template-library-template-controls {
+            width: 120px;
+        }
+
+        .elementor-template-library-template-name {
+            width: 200px;
+        }
+    }
+}
+
+#cafe-templatekit-templates-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+
+    .elementor-template-library-template {
+        position: relative;
+    }
+
+    .elementor-template-library-template-remote {
+        width: calc(33.3333% - 30px);
+        margin: 15px;
+    }
+}
+
+#cafe-templatekit-content:not(.library-tab-local) #cafe-templatekit-templates-container {
+    .elementor-template-library-template-controls {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 10px 9px 8px;
+        z-index: 10;
+    }
+
+    .cafe-templatekit-template-insert {
+        padding: 0;
+        margin: 0;
+        color: #39b54a;
+        background: none;
+        width: auto;
+        text-transform: none;
+        font-size: 12px;
+
+        &:hover {
+            box-shadow: none;
+            color: #277b32;
+        }
+    }
+
+    .elementor-template-library-template-name {
+        padding: 5px 0 0;
+        display: block !important;
+    }
+
+    .elementor-template-library-template-name-holder {
+        height: 23px;
+    }
+
+    .template-library-activate-license {
+        display: none;
+        color: #fcb92c;
+        font-size: 12px;
+
+        &:hover {
+            color: #d89403;
+        }
+    }
+
+    .cafe-tplkit-clone-to-library {
+        background: none;
+        border: none;
+        padding: 0;
+        margin: 0;
+        color: #9b0a46;
+        cursor: pointer;
+        display: none;
+        font-size: 12px;
+        box-shadow: none;
+        outline: none;
+        font-weight: bold;
+
+        i {
+            margin: 0 2px 0 0;
+            font-size: 12px;
+            font-weight: normal;
+        }
+
+        &:hover {
+            color: #530526;
+        }
+    }
+
+    .elementor-template-library-template:hover .elementor-template-library-template-name {
+        opacity: 0;
+    }
+}
+
+.library-tab-page #cafe-templatekit-templates-container .elementor-template-library-template-remote {
+    width: calc(25% - 20px);
+    margin: 10px;
+
+    .elementor-template-library-template-action {
+        padding: 8px;
+    }
+}
+
+#cafe-templatekit-templates-container {
+    .cafe-tplkit-template-no-url {
+        .elementor-template-library-template-preview {
+            cursor: default !important;
+            opacity: 0 !important;
+        }
+
+        .fa-search-plus {
+            display: none !important;
+        }
+    }
+
+    .elementor-template-library-template:hover {
+        .cafe-tplkit-clone-to-library,
+        .template-library-activate-license {
+            display: block !important;
+        }
+    }
+}
+
+.elementor-template-library-template-screenshot img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+#cafe-templatekit-preview img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+.elementor-label-inline.elementor-control-type-select2 > .elementor-control-content > .elementor-control-field > .elementor-control-input-wrapper{
+    min-width:50%
+}
